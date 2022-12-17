@@ -1,0 +1,30 @@
+@use "./_vr" as *
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  height: 60px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  background-color: $header-bg
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1)
+  .logo
+    max-width: 120px
+  .scroll-logo
+    max-width: 120px
+    display: none
+
+.on 
+  .logo
+    display: none
+  .scroll-logo
+    display: block
+
+.nav
+  padding: 8px
+  .link
+    display: inline-block
+    padding: 8px
+    color: $link-color

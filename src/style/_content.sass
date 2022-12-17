@@ -1,0 +1,21 @@
+@use "./_vr" as *
+
+.cards
+  display: flex
+  flex-wrap: wrap
+  margin: 0 0 16px
+  &.limit
+    padding: 8px
+    background-color: $color-white
+    .card
+      background-color: #c7a1ca
+  &.base
+    padding: 8px
+    .card
+      background-color: #aa97e3
+
+.card
+  margin: 4px
+  padding: 8px
+  color: $color-white
+  border: 1px solid $border-color

@@ -1,0 +1,90 @@
+@use "./_vr" as *
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html,body
+  height: 200vh
+  width: 100%
+
+html
+  font-size: 62.5%
+
+body
+  line-height: 1
+  color: $font-color
+
+img
+  max-width: 100%
+
+.wrapper
+  padding: 160px 20px 60px
+  background-color: $base-bg
+
+.input
+  padding: 8px
+  &-range
+    width: 100%
+.textarea
+  padding: 8px
+.input-caption
+  font-size: 8px
+
+a
+  text-decoration: none
+
+.flex
+  display: flex
+  flex-wrap: wrap
+  &-center
+    justify-content: center
+    align-items: center
+  &-between
+    justify-content: space-between
+
+.btn
+  padding: 8px
+  border: 1px solid $border-color
+  border-radius: 2px
+  cursor: pointer
+  background-color: $color-white
+  color: $font-color
+  &:hover
+    background-color: $base-bg
+
+.fields-division
+  .fields
+    max-width: 50%
+    width: 100%
+
+.base-card
+  padding: 16px
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.26)
+  .title
+    padding: 0 0 8px
+    font-weight: 400
+
+@for $index from 10 through 1
+  .p-#{$index}
+    padding: $index*8px
+  .p-t#{$index}
+    padding-top: $index*8px
+  .p-l#{$index}
+    padding-left: $index*8px
+  .p-r#{$index}
+    padding-right: $index*8px
+  .p-b#{$index}
+    padding-bottom: $index*8px
+
+  .m-#{$index}
+    margin: $index*8px
+  .m-t#{$index}
+    margin-top: $index*8px
+  .m-l#{$index}
+    margin-left: $index*8px
+  .m-r#{$index}
+    margin-right: $index*8px
+  .m-b#{$index}
+    margin-bottom: $index*8px
